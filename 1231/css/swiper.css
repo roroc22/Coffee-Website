@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+/*所有裡面主要顏色改成這個*/
+:root {
+  --swiper-theme-color: white;
+}
+/*把bullet的大小改掉*/
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+}
+/*商品*/
+.swiper {
+  width: 80%;
+  height: 500px;
+  overflow: hidden;
+  margin-bottom: 90px;
+
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*共創special*/
+.three_box{
+  width: 60%;
+  height: 380px;
+ 
+}
+
+/* For tablets */
+@media only screen and (min-width: 768px) {
+  /*商品*/
+  .swiper {
+    height: 380px;
+  }
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+  .three_box{
+    display: none;
+  }
+
+}
+
+/* For desktop */
+@media only screen and (min-width: 1200px) {
+/*商品*/
+.swiper {
+ 
+  height: 500px;
+}
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+}
+
+}

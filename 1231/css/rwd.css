@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+/*===============rwd details===============*/
+*{
+    box-sizing: border-box; /*避免加了padding那些跑掉*/
+}
+
+
+/*由於每個有設定col-的區塊皆為浮動(見下方class*) 
+為確保在row之後的區塊可正常顯示，需使用:after選擇器設定解除浮動關係*/
+.row:after{
+    content:"";
+    clear:both;
+    display: block;
+}
+
+/*For phone*/
+/*所有類別中有"col-"的類別項目，都是以浮動的方式排列，且寬度都固定為100%*/
+[class*="col-"]{
+    float: left;
+    padding: 20px;
+    width: 100%;
+}
+
+
+/* For tablets */
+/*css具有取代性 同樣的檔案寫了兩個一模一樣的選擇器
+下面的會把上面的蓋掉*/
+/*加了一個m避免和後面一樣，也可以選擇加bbbb aaa*/
+@media only screen and (min-width: 768px) {
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+/* For desktop */
+@media only screen and (min-width: 1200px) {
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}

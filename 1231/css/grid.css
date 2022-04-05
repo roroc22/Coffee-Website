@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;	
+}
+
+body{
+	font-size:50px;
+	color:rgba(150,150,150,1);
+}
+
+h1{
+	font-size:50px;	
+}
+
+p{
+	font-size:18px;
+	line-height:1.5em;
+}
+
+/*main*/
+
+
+
+/*for tablets*/
+@media only screen and (min-width: 768px) {
+main{
+
+}
+
+.box1{
+	background:url(../images/1.jpg) bottom no-repeat;
+	background-size:cover;
+}
+
+.box2{
+	padding:30px;
+	background:rgba(173, 7, 6,1);
+	color:rgba(255,255,255,1);
+}
+
+.box3{
+}
+
+}
+
+/*for desktops*/
+@media only screen and (min-width: 1200px) {
+
+}

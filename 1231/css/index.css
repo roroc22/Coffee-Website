@@ -1,0 +1,199 @@
+@charset "utf-8";
+/* CSS Document */
+/*@import url("nav.css");*/
+/*@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=IBM+Plex+Sans:wght@300;400&display=swap');
+*{
+	margin:0;
+	padding:0;
+}
+
+/*banner*/
+.banner{
+	position: relative;
+	/*overflow:hidden; 超過容器就hidden*/
+	width:100%;
+	height:600px;
+	background:url(../images/banner3.jpg) no-repeat; 
+	background-size:100%;
+}
+
+.anitext{
+	position:absolute;
+	top:10%;
+	left:10%;
+	font-family: 'Dancing Script', cursive;
+	color:rgba(255, 255, 255, 1);
+	font-size:80px;
+	opacity:0;
+
+	animation-name: ant;
+	animation-duration: 4s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-delay: 1s;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+
+	-webkit-animation-name: ant; /* 動畫名稱 */
+    -webkit-animation-duration: 4s; /* 動畫時間3秒 */
+    -webkit-animation-iteration-count: 1; /* 播放次數1次 */
+    -webkit-animation-timing-function: ease; /* 動態方式漸慢開始與結束 */
+    -webkit-animation-delay: 1s; /* 1秒後播放 */
+    -webkit-animation-direction: normal; /* 動畫播放順序為順向 */
+    -webkit-animation-fill-mode: forwards; /* 動畫結束後停格於最後一格，需搭配direction */
+}
+
+
+@keyframes ant{
+    from   {
+        left:0%;
+    }
+    
+    to  {
+        opacity:1;
+    }
+}
+
+
+/* topic */
+.topic{
+	
+    text-align: center;
+    
+}
+
+/*special*/
+.special{
+	display: none; /*使用in-line block 無法置中*/
+    margin: auto;
+	
+	
+	
+}
+.box_all{
+	float: left;
+	display: inline;
+	width: 200px;
+	margin: 10px;
+
+}
+
+.box{
+    display: inline-block;
+    box-sizing:border-box;
+    width:100%;
+    background:rgba(255,255,255,1);
+    margin:12px 0px 0px;
+    z-index:10;
+    overflow:hidden;
+	/*border: #87605a 1px solid;*/
+	
+}
+.box:hover{
+    cursor: pointer;
+}
+.imgbox{
+    width:60%;
+    overflow:hidden;
+	border-radius: 50%;
+	margin: auto;
+}
+
+.box .imgbox img{
+    float:left;
+    width:100%;
+
+	-ms-transform: scale(1,1); /* IE 9 */
+    -webkit-transform: scale(1,1); /* Safari */
+    transform: scale(1,1); /* Standard syntax */
+
+	transition: transform 1.5s;
+    -webkit-transition: transform 1.5s;
+    
+    transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;/* Safari */
+}
+
+.box:hover .imgbox img{
+    
+	-ms-transform: scale(1.2,1.2); /* IE 9 */
+    -webkit-transform: scale(1.2,1.2); /* Safari */
+    transform: scale(1.2,1.2); /* Standard syntax */
+}
+
+.box h3{
+    box-sizing:border-box;
+    padding:0px 20px;
+    color:#87605a;
+	text-align: center;
+	padding-top: 10px;
+}
+.box p{
+    box-sizing:border-box;
+    padding:0px 20px;
+    color:black;
+	text-align: center;
+}
+
+.head{
+	display: inline-block;
+	padding: 0px 20px 20px;
+}
+.head img{
+	float: left;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+
+
+/* For tablets */
+@media only screen and (min-width: 768px) {
+
+	/*banner*/
+	.banner{
+		position: relative;
+		/*overflow:hidden; 超過容器就hidden*/
+		width:100%;
+		min-width:768px;
+		height:500px;
+		background:url(../images/banner.jpg) no-repeat; 
+		background-size:100%;
+	}
+	.anitext{
+		top:10%;
+		left:10%;
+		font-size: 80px;
+	}
+	.special{
+		display: table;
+	}
+}
+
+/* For desktop */
+@media only screen and (min-width: 1200px) {
+	.special{
+		margin-bottom: 100px;
+	}
+	.box_all{
+		width: 300px;
+	}
+	/*banner*/
+	.banner{
+		position: relative;
+		/*overflow:hidden; 超過容器就hidden*/
+		width:100%;
+		min-width:1200px;
+		height:800px;
+		background:url(../images/banner.jpg) no-repeat; 
+		background-size:100%;
+	}
+	.anitext{
+		font-size: 200px;
+	}	
+}

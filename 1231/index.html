@@ -1,0 +1,314 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ficca</title>
+    <!--RWD記住要加這個-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--css-->
+    <link href="css/ad.css" rel="stylesheet" type="text/css">
+    <link href="css/1231.css" rel="stylesheet" type="text/css">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <!--js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/load.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script>
+    <!--swiper-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <link href="css/swiper.css" rel="stylesheet" type="text/css">
+    <!--fontawsome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="main-content">
+        <!--header-->
+        <header id="top">
+            <div class="h_box">
+                <!--logo-->
+                <a href="index.html">
+                    <img src="images/LOGO.png" height="80px" />
+                </a>
+                <!--nav-->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="product.html">商品</a>
+                        </li>
+                        <li><a href="member.html"><i class="far fa-user"></a></i></li>
+                    </ul>
+                </nav>
+                <!--不知道是不是加在這邊-->
+                <div class="menu"><i class="fas fa-bars" ></i></div>
+            </div>
+        </header>
+        <!--banner-->
+        <div class="banner col-m-12 col-12">
+            <div class="anitext">
+                Let's Ficca
+            </div>
+        </div>
+        <!--
+    <div class="main-content">
+    -->
+        <!--special-->
+        <div class="topic">
+            <h1>Ficca 與你一起共創:</h1>
+        </div>
+        <!--start-->
+        <div class="special" id="3box">
+            <div class="box_all">
+                <div class="box">
+                    <a href="#" style="text-decoration: none">
+                        <div class="imgbox">
+                            <img src="images/sp1.png" alt="">
+                        </div>
+
+                        <h3>一起品嚐</h3>
+                        <p>
+                            我們採用最高精品等級的Stictly Soft巴西莊園豆，為顧客特調最美好的咖啡。</p>
+                    </a>
+                </div>
+            </div>
+
+            <!--start-->
+            <div class="box_all">
+                <div class="box">
+                    <a href="#" style="text-decoration: none">
+                        <div class="imgbox">
+                            <img src="images/sp3.png" alt="">
+                        </div>
+
+                        <h3>一起放鬆</h3>
+                        <p>Ficca 除了嚴選咖啡豆外，我們也致力於提供給顧客舒適的環境、無壓力的氛圍。</p>
+                    </a>
+
+                </div>
+            </div>
+
+            <!--start-->
+            <div class="box_all">
+                <div class="box">
+                    <a href="#" style="text-decoration: none">
+                        <div class="imgbox">
+                            <img src="images/sp2.png" alt="">
+                        </div>
+
+                        <h3>一起體驗</h3>
+                        <p>也許你也想為特別的人沖泡一杯咖啡，透過咖啡傳遞溫暖。</p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper three_box">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/sp4.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/sp5.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/sp6.jpg" />
+                </div>
+            </div>
+            <div class="swiper-button-next" style="color: #87605a;"></div>
+            <div class="swiper-button-prev" style="color: #87605a"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- 1200 促銷廣告coupon swiper -->
+        <main id="m1">
+            <section>
+                <div class="swiper-container" id="s_pic">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="#"><img src="images/b1.png" /></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="images/b2.jpg" /></a></div>
+                    </div>
+                    <!-- Add Pagination 下面兩個點點-->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows 滑動的箭頭-->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </section>
+        </main>
+
+
+        <div style="margin-top: 10px; margin-left: 10%;"><span>你可能也喜歡...</span></div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper product">
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="product.html"><img src="images/p1.jpg" /></a></div>
+                <div class="swiper-slide"><a href="product.html"><img src="images/p2.jpg" /></a></div>
+                <div class="swiper-slide"><a href="product.html"><img src="images/p3.jpg" /></a></div>
+                <div class="swiper-slide"><a href="product.html"><img src="images/p4.jpg" /></a></div>
+                <div class="swiper-slide"><a href="product.html"><img src="images/p5.jpg" /></a></div>
+                <div class="swiper-slide"><a href="product.html"><img src="images/p6.jpg" /></a></div>
+            </div>
+            <!-- Add Arrows 滑動的箭頭-->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+    <!--aside-->
+    <aside>
+        <a href="#top">
+            <div class="totop"></div>
+        </a>
+    </aside>
+
+    <!--footer-->
+    <footer>
+        <div class="" >
+           &copy; 此為課堂學習使用，請勿轉用商用。
+        </div>
+    </footer>
+
+    <!--swiper js 要讓他可以動-->
+    <!--spaceBetween是只圖和圖之間的距離-->
+    <script>
+        var swiper = new Swiper(".swiper-container", {
+            speed: 1000,
+            spaceBetween: 0,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+
+    <!-- Initialize Swiper 商品版本一 -->
+    <!--
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script> -->
+
+    <!--商品版本2
+    <script>
+        $(document).ready(function () {
+            var a_w = document.body.clientWidth;
+            var x;
+            if (a_w >= 768) {
+                x = 3;
+            } else {
+                x = 1.5;
+            }
+            console.log(x);
+            debugger;
+            $(window).on('load resize', function () {
+                var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: x,
+                    spaceBetween: 30,
+                    slidesPerGroup: 3,
+                    loop: true,
+                    loopFillGroupWithBlank: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                });
+            });
+            debugger;
+        });
+    </script>-->
+
+
+
+    <script>
+        $(document).ready(function () {
+            // Optimalisation: Store the references outside the event handler:
+            var $window = $(window);
+            var a_w = document.body.clientWidth;
+            var x;
+            console.log(x);
+            function checkWidth() {
+                var windowsize = $window.width();
+                if (windowsize > 768) {
+                    //if the window is greater than 440px wide then turn on jScrollPane..
+                    x = 3;
+                    y = 3;
+                } else {
+                    x = 1;
+                    y = 1;
+                }
+                console.log(x);
+                var swiper = new Swiper(".product", {
+                    slidesPerView: x,
+                    spaceBetween: 30,
+                    slidesPerGroup: y,
+                    loop: true,
+                    loopFillGroupWithBlank: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                });
+            }
+            // Execute on load
+            checkWidth();
+            // Bind event listener
+            $(window).resize(checkWidth);
+        });
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".three_box", {
+          effect: "flip",
+          grabCursor: true,
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+   
+</body>
+
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--RWD記住要加這個-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member</title>
+
+    <!--CSS-->
+    <link href="css/1231.css" rel="stylesheet" type="text/css">
+    <link href="css/product.css" rel="stylesheet" type="text/css">
+    <!--jQuery-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!--jQuery-->
+    <script type="text/javascript" src="js/product.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script>
+
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.7"></script>
+    <!--fontawsome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+
+    <script>
+        function showAlert() {
+            var myText = "儲存成功";
+            alert(myText);
+        }
+
+
+
+    </script>
+
+</head>
+
+<body>
+    <div class="main-content">
+        <!--header-->
+        <header id="top">
+            <div class="h_box">
+                <!--logo-->
+                <a href="index.html">
+                    <img src="images/LOGO.png" height="80px" />
+                </a>
+                <!--nav-->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="product.html">商品</a>
+                        </li>
+                        <li><a href="member.html"><i class="far fa-user"></a></i></li>
+                    </ul>
+                </nav>
+                <!--不知道是不是加在這邊-->
+                <div class="menu"><i class="fas fa-bars" style="color: #87605a;"></i></div>
+            </div>
+        </header>
+
+        <div class="container member">
+
+            <aside>
+                <div class="box"><i class="far fa-user" style=" color: #876d5a; font-size: 30px; padding: 10px; "></i>
+                    <div class="word">ACCOUNT</div>
+                </div>
+                <div class="box"><i class="fas fa-ticket-alt" style=" color: #876d5a; padding: 10px;"></i>
+                    <div class="word">COUPON</div>
+                </div>
+
+            </aside>
+
+            <section>
+                <div class="conbox">
+                    <div class="content">
+
+                        <div class="topic">
+                            <h1>My Account</h1>
+                        </div>
+
+                        <div class="wrap">
+                            <!--wrap-->
+
+                            <div class="account left ipad">
+                                <div class="img_left"><img src="images/member1.jpg" alt=""></div>
+                                <div class="title_top">
+                                    <p style="font-size: 20px;">我的帳戶</p>
+                                    <p style="color: #A9A9A9;">管理你的檔案以保護你的帳戶</p>
+                                </div>
+                                <hr>
+                                <fieldset>
+                                    <form action="">
+                                        <label class="title">使用者帳號:
+                                        </label> <span>roro</span>
+                                        <br>
+
+                                        <label class="title">姓名:</label>
+
+                                        <input type="text" value="請輸入你的姓名">
+
+                                        <br>
+                                        <label class="title">Email:</label><span>fi******@gmail.com</span><span
+                                            class="change">變更</span>
+                                        <br>
+                                        <label class="title">手機號碼:</label><span>*******089</span><span
+                                            class="change">變更</span>
+                                        <br>
+                                        <label class="title">性別:</label>
+                                        <label class="">男
+                                            <input type="checkbox" checked="checked">
+                                        </label>
+
+                                        <label class="">女
+                                            <input type="checkbox">
+                                        </label>
+
+                                        <label class="">其他
+                                            <input type="checkbox">
+                                        </label>
+                                        <br>
+                                        <label class="title" >生日:</label><input type="text" value="請輸入你的生日">
+
+                                        <br>
+                                        <input class="button" onclick='showAlert()' type="button" value="save"
+                                            name="save">
+                                    </form>
+                                </fieldset>
+                            </div>
+
+                            <div class="account left phone">
+                                <div class="img_left"><img src="images/member1.jpg" alt=""></div>
+                                <div class="title_top">
+                                    <p style="font-size: 20px;">我的帳戶</p>
+                                    <p style="color: #A9A9A9;">管理你的檔案<br>以保護你的帳戶</p>
+                                </div>
+                                <hr>
+                                <fieldset>
+                                    <form action="">
+                                        <div class="form_phone">
+                                            <label class="title">使用者帳號: </label> <span>roro</span>
+                                        </div>
+
+                                        <div class="form_phone">
+                                            <label class="title">姓名:</label>
+                                            <br>
+                                            <input type="text" value="請輸入你的姓名">
+                                        </div>
+                                        <div class="form_phone">
+                                            <label class="title">Email:</label>
+                                            <br>
+                                            <span>fi******@gmail.com</span><span class="change">變更</span>
+                                        </div>
+                                        <div class="form_phone">
+                                            <label class="title">手機號碼:</label>
+                                        <br>
+                                        <span>*******089</span><span class="change">變更</span>
+                                        </div>
+                                        <div class="form_phone">
+                                        <label class="title">性別:</label>
+                                        <br>
+                                        <label class="">男
+                                            <input type="checkbox" checked="checked">
+                                        </label>
+
+                                        <label class="">女
+                                            <input type="checkbox">
+                                        </label>
+
+                                        <label class="">其他
+                                            <input type="checkbox">
+                                        </label>
+                                        </div>
+                                        <label class="title">生日:
+                                            <br>
+                                        </label><input type="text" value="請輸入你的生日">
+
+                                        <br>
+                                        <input class="button" onclick='showAlert()' type="button" value="save"
+                                            name="save">
+                                    </form>
+                                </fieldset>
+                            </div>
+
+                            <div class="right">
+                                <img src="images/member1.jpg" alt="">
+                                <p> 檔案大小: 最大1MB</p>
+                                <p>檔案限制: .JPEG,.PNG</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!--Bean-->
+                    <div class="content">
+                        <div class="topic">
+                            <h1>My Coupon</h1>
+                        </div>
+                        <div class="ilflow coupon">
+
+                            <!--start-->
+                            <div class="picbox">
+                                <!--套用單張fancybox效果-->
+                                <div class="imgbox">
+                                    <!--s2和等等jQuery名稱有關 / 點開後會秀出來的相片 / 名稱-->
+                                    <img src="images/t1.jpg">
+                                    <!--more-->
+                                    <div class="fadebox">
+                                        <a class="linktext more" href="images/t1.jpg" title="買一送一 揪團一起買">
+                                            <div>More</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <h3>買一送一</h3>
+                                <p>使用期限: 今天截止</p>
+
+                            </div>
+
+                            <!--start-->
+                            <div class="picbox">
+                                <!--套用單張fancybox效果-->
+                                <div class="imgbox">
+                                    <!--s2和等等jQuery名稱有關 / 點開後會秀出來的相片 / 名稱-->
+                                    <img src="images/t3.jpg">
+                                    <!--more-->
+                                    <div class="fadebox">
+                                        <a class="linktext more" href="images/t3.jpg" title="八折優惠">
+                                            <div>More</div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <h3>八折優惠</h3>
+                                <p>使用期限: 2022/01/17</p>
+
+                            </div>
+
+                            <!--start-->
+                            <div class="picbox">
+                                <!--套用單張fancybox效果-->
+                                <div class="imgbox">
+                                    <!--s2和等等jQuery名稱有關 / 點開後會秀出來的相片 / 名稱-->
+                                    <img src="images/t2.jpg">
+                                    <!--more-->
+                                    <div class="fadebox">
+                                        <a class="linktext more" href="images/t2.jpg" title="限量超值優惠">
+                                            <div>More</div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <h3>限量超值優惠</h3>
+                                <p>使用期限: 2022/01/17</p>
+
+                            </div>
+
+
+                            <!--start-->
+                            <div class="picbox">
+                                <!--套用單張fancybox效果-->
+                                <div class="imgbox">
+                                    <!--s2和等等jQuery名稱有關 / 點開後會秀出來的相片 / 名稱-->
+                                    <img src="images/t1.jpg">
+                                    <!--more-->
+                                    <div class="fadebox">
+                                        <a class="linktext more" href="images/t1.jpg" title="買一送一 揪團一起買">
+                                            <div>More</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <h3>買一送一</h3>
+                                <p>使用期限: 2022/01/31</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!--footer-->
+    <footer>
+        <div class="" >
+           &copy; 此為課堂學習使用，請勿轉用商用。
+        </div>
+    </footer>
+
+</body>
+
+</html>
